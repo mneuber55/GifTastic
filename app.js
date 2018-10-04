@@ -1,5 +1,5 @@
 var apiKey = "Ux0jqF5W1E5OscTjoh7SNXDjkppBAIAm";
-var topics = ["cats", "dogs", "birds", "fish", "horses", "seals"];
+var topics = ["Philly Phanatic", "Gritty", "Mr. Met", "San Diego Chicken", "Benny the Bull", "Wally"];
 
 //Function for setting search term, performing AJAX call and populating gifs
 function callGifs() {
@@ -33,14 +33,14 @@ function populateButtons() {
     for (var i=0; i<topics.length; i++) {
         topicBtn = $("<button>");
         topicBtn.addClass("topic-button");
-        topicBtn.attr("animal", topics[i]);
+        topicBtn.attr("mascot", topics[i]);
         topicBtn.text(topics[i]);
         $("#button-panel").append(topicBtn);
     }
     //Start button click event listener
     $("button").on("click", function() {
         event.preventDefault();
-        searchTerm = $(this).attr("animal").trim();
+        searchTerm = $(this).attr("mascot").trim();
         callGifs();
     });
 

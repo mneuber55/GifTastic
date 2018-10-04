@@ -1,13 +1,33 @@
+#button-panel {
+    margin: 20px;
+}
 
 button {
     padding: 5px;
-    background-color: aquamarine;
+    background-color: cadetblue;
     margin: 5px;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+}
+
+form {
+    margin: 20px;
+}
+
+#gif-space {
+    margin: 20px;
 }
 
 .added-gif-div {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     float: left;
     font-size: 16px;
     font-weight: bold;
+}
+
+h5, input {
+    margin: 5px;
 }
